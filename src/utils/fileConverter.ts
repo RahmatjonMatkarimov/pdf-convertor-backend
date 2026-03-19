@@ -22,7 +22,8 @@ const convert = async (filename: string): Promise<string> => {
                     console.error(err);
                 }
             });
-            const pdfUrl = 'http://localhost:3000/uploads/' + pdfFilename;
+            const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+            const pdfUrl = `${baseUrl}/uploads/${pdfFilename}`;
             resolve(pdfUrl);
         });
     });

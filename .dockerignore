@@ -1,0 +1,13 @@
+node_modules
+dist
+test
+.git
+.gitignore
+.DS_Store
+uploads/*.pdf
+uploads/*.docx
+uploads/*.doc
+*.md
+Dockerfile
+.dockerignore
+package-lock.json (if you want to speed up docker cache, but keep it if you want deterministic builds)
